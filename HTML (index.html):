@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medusa - Доставка обедов</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- Подключение внешнего CSS-файла -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Шапка сайта / Навигация -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.jpg" alt="Medusa Logo" />
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#about">О компании</a></li>
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Главный экран (Hero) -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Доставка комплексных обедов в Алматы</h1>
+        <p>Свежие, вкусные и разнообразные обеды для вашей команды. Ежедневно доставляем горячие блюда прямо к вам в офис или домой.</p>
+        <a href="https://wa.me/77072603494" target="_blank" rel="noopener" class="order-button">Заказать</a>
+      </div>
+      <div class="hero-image">
+        <!-- Изображение для главного экрана (замените 'hero.jpg' на фактический файл) -->
+        <img src="hero.jpg" alt="Комплексные обеды" />
+      </div>
+    </div>
+  </section>
+
+  <!-- О компании -->
+  <section id="about" class="fade-in-on-scroll">
+    <div class="container">
+      <h2>О компании</h2>
+      <p>Мы – <strong>Medusa</strong>, сервис доставки комплексных обедов в Алматы. Ежедневно готовим домашние блюда из свежих продуктов и привозим их в офисы и на мероприятия. Наша миссия – обеспечить вас вкусным и полезным питанием без лишних забот.</p>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section id="advantages" class="fade-in-on-scroll">
+    <div class="container">
+      <h2>Преимущества</h2>
+      <div class="advantages-list">
+        <div class="advantage-item">
+          <i class="fa-solid fa-utensils"></i>
+          <h3>Разнообразное меню</h3>
+          <p>Новое меню на каждый день, чтобы питание не надоедало.</p>
+        </div>
+        <div class="advantage-item">
+          <i class="fa-solid fa-leaf"></i>
+          <h3>Свежие продукты</h3>
+          <p>Используем только свежие и качественные ингредиенты.</p>
+        </div>
+        <div class="advantage-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Удобная оплата и доставка</h3>
+          <p>Гибкие способы оплаты и быстрая доставка прямо к вам.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Меню на неделю -->
+  <section id="menu" class="fade-in-on-scroll">
+    <div class="container">
+      <h2>Меню на неделю</h2>
+      <div class="week-menu-list">
+        <div class="day-menu">
+          <h3>Понедельник</h3>
+          <ul>
+            <li>Суп дня</li>
+            <li>Куриное филе с рисом</li>
+            <li>Салат свежий</li>
+          </ul>
+        </div>
+        <div class="day-menu">
+          <h3>Вторник</h3>
+          <ul>
+            <li>Борщ украинский</li>
+            <li>Говядина с овощами</li>
+            <li>Компот из сухофруктов</li>
+          </ul>
+        </div>
+        <div class="day-menu">
+          <h3>Среда</h3>
+          <ul>
+            <li>Крем-суп из грибов</li>
+            <li>Плов по-узбекски</li>
+            <li>Овощной салат</li>
+          </ul>
+        </div>
+        <div class="day-menu">
+          <h3>Четверг</h3>
+          <ul>
+            <li>Суп харчо</li>
+            <li>Котлета с картофельным пюре</li>
+            <li>Морс ягодный</li>
+          </ul>
+        </div>
+        <div class="day-menu">
+          <h3>Пятница</h3>
+          <ul>
+            <li>Уха домашняя</li>
+            <li>Бифштекс с гречкой</li>
+            <li>Салат витаминный</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="fade-in-on-scroll">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-info">
+        <p><i class="fa-solid fa-location-dot"></i> г. Алматы, пр. Достык, 123</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+77072603494">+7 (707) 260-3494</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/77072603494" target="_blank" rel="noopener">Написать в WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Скрипты для анимации и адаптивного меню -->
+  <script>
+    // Плавное появление секций при прокрутке (Intersection Observer)
+    const faders = document.querySelectorAll('.fade-in-on-scroll');
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    faders.forEach(fader => observer.observe(fader));
+
+    // Переключение мобильного меню (бургер-кнопка)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
